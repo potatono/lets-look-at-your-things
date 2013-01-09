@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Let's look at your things!</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+			
+        <div class="container">
+		<div id="alert" class="alert hide">
+			<button type="button" class="close" data-dismiss="alert">x</button>
+			<span id="alert-msg">Warning!  This is an alert</span>
+		</div>
+        <div id="main" class="hero-unit">
+            <h1>Let's look at your things!</h1>
+            <p>
+                This sample app will take a look at your things show you a visualization of their interactions on Thingiverse.
+                But first we'll need to approve this app on Thingiverse.
+            </p>
+            <a href="http://www.thingiverse.com/login/oauth/authorize?client_id={{client_id}}" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+        </div>
+
+		<script>
+			var data = {
+				'error': '{{error}}',
+				'token': '{{token}}'
+			};
+		</script>
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+		<script src="js/jit.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
+

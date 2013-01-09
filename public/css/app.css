@@ -1,0 +1,48 @@
+.container {
+	height: 600px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.container .hero-unit {
+	margin-top: 100px;
+}
+
+.container.running {
+	position: relative;
+	top: 25px;
+	margin-top: 0;
+	height: 600px;
+}
+
+.container.running.fullscreen {
+	height: 900px !important;
+}
+
+.container.running .hero-unit {
+	margin-top: 0;
+	padding: 10px;
+}
+
+.container.running input {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+#current {
+	position: absolute;
+	left: 20px;
+	z-index: 100;
+	width: 865px;
+	background-color: rgba(255,255,255,0.5);
+
+}
+
+#current h3 {
+	display: inline;
+	margin-left: 10px;
+}
+
